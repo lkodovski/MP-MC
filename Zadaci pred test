@@ -1,0 +1,25 @@
+;1. Soberi gi broevite 08H koj sto se naogja vo memorija na adresa
+;206DH i brojot 01H koj sto treba da se zeme od I/O so adresa 0BH
+;rezultatot namali go za eden i smesti go vo registar L
+
+;LDA 206DH
+;MOV B, A
+;IN 0BH
+;ADD B
+;DCR A
+;MOV L, A 
+
+;HLT
+
+
+
+
+;2. Logicki soberi gi komplementite na broevite 0AH i B3H
+
+;MVI A, 0AH
+;CMA
+;MOV B, A
+;MVI A, 0B3H
+;CMA
+;ORA B 
+;HLT
